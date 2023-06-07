@@ -1,4 +1,4 @@
-# Ruta-Nombres-Largos
+# Carpetas con nombres largos
 Escanea todas las carpetas de la unidad seleccionada, proporcionando las rutas que sobrepasen los 170 caracteres. Solo escanea las carpetas, considerando que los archivos en su interior podrían exceder el número de caracteres si se suman a la ruta.  
 
 -Importante:Este script trabaja con las unidades del equipo donde se ecnuentra almacenado
