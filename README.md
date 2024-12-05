@@ -1,10 +1,13 @@
 # Carpetas con nombres largos
-Escanea todas las carpetas de la unidad seleccionada, proporcionando las rutas que sobrepasen los 170 caracteres. Solo escanea las carpetas, considerando que los archivos en su interior podrían exceder el número de caracteres si se suman a la ruta.  
+Escanea todas las carpetas de la unidad seleccionada, proporcionando las rutas que sobrepasen los 170 caracteres y exportando esta información en un archivo .csv.
 
--Importante:Este script trabaja con las unidades del equipo donde se ecnuentra almacenado
+Se escanean únicamente los caracteres en los nombres de las carpetas para obtener la ruta completa. Es importante tener en cuenta que, al sumar los caracteres de los nombres de los archivos en su interior, la longitud total de la ruta podría exceder el límite establecido.
 
-Modificar: $rutas = solo escanea una unidad a la vez, colocar la unidad a escanear.  
-           $resultado = cambiar ruta de salida para el archivo resultados.csv   
-           $num_caracteres -gt 170 : cambiar numero de caracteres para escaneo de ruta.  
+Importante: Este script trabaja con las unidades del equipo donde se encuentra almacenado(local).
+
+Modificaciones: $rutas: El script solo escanea una unidad a la vez. Es necesario especificar la unidad a escanear. 
+           $resultado: Cambiar la ruta de salida para el archivo resultados.csv. 
+           $num_caracteres -gt 170: Modificar el número de caracteres que se utilizarán como umbral para el escaneo de rutas. 
+
            
-El objetivo de este pequeño script es ubicar las carpetas que podrian causar algun conflicto al realizar copias de seguridad.
+El objetivo de este pequeño script es identificar las carpetas que podrían causar conflictos al realizar copias de seguridad.
